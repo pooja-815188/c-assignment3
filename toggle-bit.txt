@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("enter a number\n");
+    scanf("%d",&n);
+    int i;
+    for(i=7;i>=0;i--)
+    {
+        printf("%d",((n>>i)&1));
+    }
+    printf("\n");
+    int bit;
+    printf("enter a bit\n");
+    scanf("%d",&bit);
+    n=n^(1<<bit);
+    for(i=7;i>=0;i--)
+    {
+        printf("%d",((n>>i)&1));
+    }
+    printf("\n");
+     printf("%d\n",n);
+}
