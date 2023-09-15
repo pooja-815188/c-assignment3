@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char ch[20],j,i,k,count=0;
+    printf("enter the string\n");
+    scanf("%s",ch);
+    int len1=strlen(ch);
+    char rev[20];
+    printf("enter the string\n");
+    scanf("%s",rev);
+    
+    j=len1-1;
+    for(int i=0;i<len1;i++)
+    {
+        rev[i]=ch[j];
+        j--;
+    }
+    printf("THE REVERSE IS : %s\n",rev);
+    for(k=0;k<len1;k++)
+    {
+    if(ch[k]==rev[k])
+    {
+        count++;
+    }
+    }
+    if(count==len1)
+    {
+        printf("palindrome");
+        
+    }else
+    {
+        printf("not");
+    }
+}
