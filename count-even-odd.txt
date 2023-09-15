@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,count=0,count1=0;
+    printf("enter a size\n");
+    scanf("%d",&n);
+    int arr[n];
+    printf("enter a array elemet\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("even elements are\n");
+    for(i=0;i<n;i++)
+    {
+   if(arr[i]%2==0)
+   {
+       count++;
+   }
+    }
+   printf("count=%d\n",count);
+   printf("odd elements are\n");
+   for(i=0;i<n;i++)
+   {
+       if(arr[i]%2==1)
+       {
+           count1++;
+       }
+   }
+   printf("count1=%d\n",count1);
+}
