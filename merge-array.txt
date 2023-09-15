@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int arr[]={1,2,3};
+    int arr1[]={4,5,6};
+    int l=*(&arr+1)-arr;
+    int l2=*(&arr1+1)-arr1;
+    int sum=l+l2;
+    int i;
+    for(i=0;i<sum;i++)
+    {
+        arr[l+i]=arr1[i];
+    }
+    for(i=0;i<sum;i++)
+    printf("%d\n",arr[i]);
+}
