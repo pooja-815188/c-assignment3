@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int n,i; int l=0,s=999;
+    printf("enter a size\n");
+    scanf("%d",&n);
+    int arr[n];
+    printf("enter a array elemts\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("largest array is\n"); 
+    for(i=0;i<n;i++)
+    {
+        if(l<arr[i])   
+                                                
+        {
+            l=arr[i];
+        }
+
+    }
+    printf("%d\n",l);
+    printf("smallest array is\n"); 
+    for(i=0;i<n;i++)
+    {
+        if(s>arr[i])   
+                                                
+        {
+            s=arr[i];
+        }
+
+    }
+    printf("%d\n",s);
+}
